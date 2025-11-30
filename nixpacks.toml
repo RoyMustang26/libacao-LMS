@@ -1,15 +1,15 @@
 [phases.setup]
-nixPkgs = ['nodejs_22', 'pnpm', 'php82', 'php82Packages.composer']
+nixPkgs = ['nodejs_20', 'pnpm', 'php82', 'php82Packages.composer']
 
 [phases.install]
 cmds = [
     'composer install --no-dev --optimize-autoloader',
-    'pnpm install',
-    'pnpm build'
+    'pnpm install --frozen-lockfile'
 ]
 
 [phases.build]
 cmds = [
+    'pnpm run build',
     'php artisan route:cache',
     'php artisan view:cache',
     'php artisan storage:link'
