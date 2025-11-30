@@ -1,0 +1,1 @@
+import{F as e,it as t}from"./vue-UmFUivib.js";import{p as n}from"./index-BwYHa19M.js";var r={};function i(n,r){return t(),e(`div`,null,` 管理员拥有访问权限 `)}var a=n(r,[[`render`,i]]);export{a as default};

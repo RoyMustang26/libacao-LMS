@@ -1,0 +1,1 @@
+import{N as e,it as t}from"./vue-UmFUivib.js";import{X as n}from"./antd-B_p1HNUS.js";import{p as r}from"./index-BwYHa19M.js";var i={};function a(r,i){let a=n;return t(),e(a,{status:`404`,title:`页面配置错误`,"sub-title":`动态配置页面不存在，请检查配置项`})}var o=r(i,[[`render`,a]]);export{o as default};

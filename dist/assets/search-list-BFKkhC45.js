@@ -1,0 +1,1 @@
+import{H as e,N as t,ct as n,it as r,yt as i}from"./vue-UmFUivib.js";import"./antd-B_p1HNUS.js";import"./context-Bv_Ls97G.js";import"./page-container-Beu2-ok8.js";import{t as a}from"./search-list-container-4ctB90l0.js";var o=e({name:`SearchList`,__name:`index`,setup(e){return(e,o)=>(r(),t(a,null,{default:i(()=>[n(e.$slots,`default`)]),_:3}))}});export{o as default};

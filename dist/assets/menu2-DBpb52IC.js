@@ -1,0 +1,1 @@
+import{B as e,F as t,it as n,z as r}from"./vue-UmFUivib.js";import{ht as i}from"./antd-B_p1HNUS.js";import{p as a}from"./index-BwYHa19M.js";var o={};function s(a,o){let s=i;return n(),t(`div`,null,[o[0]||=r(` Menu1-1-2 `,-1),e(s)])}var c=a(o,[[`render`,s]]);export{c as default};

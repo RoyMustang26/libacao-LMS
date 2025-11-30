@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "forceConsistentCasingInFileNames": true,
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve",
+    "jsxImportSource": "vue",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    // paths
+    "baseUrl": ".",
+    "paths": {
+      "~@/*": ["resources/js/LMS/*"],
+      "~/*": ["resources/js/LMS/*"],
+      "@/*": ["resources/js/LMS/*"],
+      "~#/*": ["resources/js/LMS/enums/*"],
+    }
+  },
+  "include": ["resources/js/LMS/**/*.ts", "resources/js/LMS/**/*.d.ts", "resources/js/LMS/**/*.tsx", "resources/js/LMS/**/*.vue", "types/**/*.d.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
