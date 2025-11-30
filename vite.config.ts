@@ -22,9 +22,6 @@ export default ({ mode }: ConfigEnv): UserConfig => {
   }
   return {
     plugins: createVitePlugins(env),
-    css: {
-      lightningcss: false,
-    },
     resolve: {
       alias: [
         {
@@ -86,9 +83,33 @@ export default ({ mode }: ConfigEnv): UserConfig => {
       outDir: OUTPUT_DIR,
       rollupOptions: {
         output: {
-          manualChunks: {
-            'vue': ['vue', 'vue-router', 'pinia', 'vue-i18n', '@vueuse/core'],
-            'antd': ['ant-design-vue', '@ant-design/icons-vue', 'dayjs'],
+          advancedChunks: {
+            groups: [
+              {
+                test: /[\\/]node_modules[\\/](vue|vue-router|pinia|vue-i18n|@vueuse[\\/]core)[\\/]/,
+                name: 'vue',
+              },
+              {
+                test: /[\\/]node_modules[\\/](ant-design-vue|@ant-design[\\/]icons-vue|dayjs)[\\/]/,
+                name: 'antd',
+              },
+            ],
+          },
+        },
+      },
+      rolldownOptions: {
+        output: {
+          advancedChunks: {
+            groups: [
+              {
+                test: /[\\/]node_modules[\\/](vue|vue-router|pinia|vue-i18n|@vueuse[\\/]core)[\\/]/,
+                name: 'vue',
+              },
+              {
+                test: /[\\/]node_modules[\\/](ant-design-vue|@ant-design[\\/]icons-vue|dayjs)[\\/]/,
+                name: 'antd',
+              },
+            ],
           },
         },
       },
