@@ -109,5 +109,12 @@
     },
     "lint-staged": {
         "**/*.{vue,ts,js,jsx,tsx}": "eslint src --fix"
+    },
+    "pnpm": {
+        "overrides": {
+            "rolldown": "0.0.0",
+            "@rolldown/binding-linux-x64-gnu": "0.0.0",
+            "@rolldown/*": "0.0.0"
+        }
     }
 }
