@@ -4,7 +4,7 @@ nixPkgs = ['nodejs_20', 'pnpm', 'php82', 'php82Packages.composer']
 [phases.install]
 cmds = [
     'composer install --no-dev --optimize-autoloader',
-    'pnpm install --frozen-lockfile'
+    'pnpm install --no-frozen-lockfile'
 ]
 
 [phases.build]
