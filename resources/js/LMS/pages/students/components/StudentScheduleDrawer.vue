@@ -37,9 +37,9 @@ const props = defineProps<{
 }>()
 
 /* ---------------------- Emits ---------------------- */
-const emit = defineEmits<{
-    (event: 'update:visible', value: boolean): void
-}>()
+// const emit = defineEmits<{
+//     (event: 'update:visible', value: boolean): void
+// }>()
 
 /* ---------------------- State ---------------------- */
 const schedule = ref<ScheduleRow[]>([])

@@ -5,9 +5,6 @@ import StepAYConfig from './StepAYConfig.vue'
 import StepDryRun from './StepDryRun.vue'
 import StepExecute from './StepExecute.vue'
 
-const props = defineProps({
-  visible: Boolean
-})
 
 const emit = defineEmits(['update:visible', 'completed'])
 
