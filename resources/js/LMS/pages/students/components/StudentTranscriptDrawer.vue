@@ -40,9 +40,9 @@ const props = defineProps<{
 }>()
 
 /* ---------------------- Emits ---------------------- */
-// const emit = defineEmits<{
-//   (e: 'update:visible', value: boolean): void
-// }>()
+const emit = defineEmits<{
+  (e: 'update:visible', value: boolean): void
+}>()
 
 /* ---------------------- State ---------------------- */
 const student = ref<Student | null>(null)
