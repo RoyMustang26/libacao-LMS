@@ -3,7 +3,7 @@ import {
   presetAttributify,
   presetIcons,
   presetTypography,
-  presetWind3,
+  presetWind,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
@@ -20,7 +20,7 @@ export default defineConfig({
     ...antdUnoTheme,
   },
   presets: [
-    presetWind3(),
+    presetWind(),
     presetAttributify(),
     presetChinese(),
     presetEase(),
