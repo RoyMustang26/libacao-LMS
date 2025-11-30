@@ -22,6 +22,9 @@ export default ({ mode }: ConfigEnv): UserConfig => {
   }
   return {
     plugins: createVitePlugins(env),
+    css: {
+      lightningcss: false,
+    },
     resolve: {
       alias: [
         {
