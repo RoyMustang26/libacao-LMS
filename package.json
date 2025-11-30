@@ -71,7 +71,7 @@
         "treeify": "^1.1.0",
         "ts-node": "^10.9.2",
         "typescript": "~5.8.3",
-        "unocss": "0.56.5",
+        "unocss": "^66.5.2",
         "unocss-preset-chinese": "^0.3.3",
         "unocss-preset-ease": "^0.0.3",
         "unplugin-auto-import": "^19.3.0",
