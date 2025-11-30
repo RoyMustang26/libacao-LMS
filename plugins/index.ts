@@ -3,7 +3,6 @@ import VitePluginPreloadAll from '@mistjs/vite-plugin-preload'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import AntdvResolver from 'antdv-component-resolver'
-import { mockH3 } from 'mock-h3/vite'
 import Unocss from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import GenerateConfig from 'unplugin-config/vite'
@@ -15,7 +14,6 @@ export function createVitePlugins(env: Record<string, string>) {
   const vitePluginList: (PluginOption | PluginOption[])[] = [
     vue(),
     vueJsx(),
-    mockH3({}),
     VitePluginPreloadAll(),
     AutoImport({
       imports: [
